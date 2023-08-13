@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="h-screen flex flex-col justify-center items-center bg-gray-600">
+        <div class="bg-white flex flex-col justify-center items-center w-3/12 h-auto p-5">
+            <img class="w-24" src="https://png.pngtree.com/png-vector/20191110/ourmid/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg"/>
+            <h1 class="font-semibold text-xl mb-10">Ingresa tus datos</h1>
+            <form action="/api/auth/login" method="post">
+                <input name="email" class="p-2 border-2 border-gray-400 rounded-lg mb-5 w-full" type="email" placeholder="Email" required />
+                <input name="password" class="p-2 border-2 border-gray-400 rounded-lg mb-5 w-full" type="password" placeholder="*****" type="password" required />
+
+                <button type="submit" class="transition duration-300 bg-blue-500 w-full p-2 rounded-xl text-white hover:bg-blue-700">Login</button>
+            
+                <a href="/register" class="mx-auto mt-5">New user</a>
+            </form>
+        </div>
+    </div>    
+</body>
+</html>
